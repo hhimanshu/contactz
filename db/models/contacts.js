@@ -1,10 +1,13 @@
 "use strict";
+import Users from "users";
+
 module.exports = (sequelize, DataTypes) => {
-    const Users = sequelize.define("Users", {
+    const Contacts = sequelize.define("Contacts", {
         firstName: DataTypes.STRING,
         lastName: DataTypes.STRING,
         email: DataTypes.STRING,
-        password: DataTypes.STRING
+        phone: DataTypes.STRING,
+        userId: DataTypes.INTEGER
     }, {
         classMethods: {
             associate: function (models) {
@@ -12,5 +15,8 @@ module.exports = (sequelize, DataTypes) => {
             }
         }
     });
-    return Users;
+
+    Users.hasMany(Contacts, {as: "contacts"});
+
+    return Contacts;
 };
