@@ -1,7 +1,6 @@
 "use strict";
-const models = require("../models");
 module.exports = (sequelize, DataTypes) => {
-    const Contacts = sequelize.define("Contacts", {
+    const Contact = sequelize.define("Contact", {
         firstName: DataTypes.STRING,
         lastName: DataTypes.STRING,
         email: DataTypes.STRING,
@@ -14,15 +13,15 @@ module.exports = (sequelize, DataTypes) => {
         }
     });
 
-    Contacts.associate = function (models) {
+    Contact.associate = function (models) {
         // Using additional options like CASCADE etc for demonstration
         // Can also simply do Task.belongsTo(models.User);
-        Contacts.belongsTo(models.Users, {
+        Contact.belongsTo(models.User, {
             onDelete: "CASCADE",
             foreignKey: {
                 allowNull: false
             }
         });
     };
-    return Contacts;
+    return Contact;
 };

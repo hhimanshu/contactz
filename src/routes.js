@@ -9,7 +9,7 @@ routes.get('/', (req, res) => {
 });
 
 routes.get('/users', (req, res) => {
-    models.Users.findAll().then(users => {
+    models.User.findAll().then(users => {
         console.log(users)
     });
 
@@ -17,7 +17,7 @@ routes.get('/users', (req, res) => {
 });
 
 routes.get('/contacts', (req, res) => {
-    models.Contacts.findAll().then(contacts => {
+    models.Contact.findAll().then(contacts => {
         console.log(contacts);
     });
 
