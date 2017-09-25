@@ -1,9 +1,9 @@
 {
   "name": "express-babel",
   "version": "1.0.0",
-  "description": "Using latest JavaScript features on the server",
-  "repository": "https://github.com/vmasto/express-babel",
-  "author": "Vassilis Mastorostergios <vmasto@gmail.com>",
+  "description": "Building Pure API Server in Javascript",
+  "repository": "https://github.com/hhimanshu/contactz",
+  "author": "Harit Himanshu <harit.himanshu@yahoo.in>",
   "license": "MIT",
   "main": "dist/index.js",
   "engines": {
@@ -38,8 +38,11 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "morgan": "^1.7.0",
-    "pug": "^2.0.0-beta11",
-    "rimraf": "^2.6.1"
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
+    "rimraf": "^2.6.1",
+    "sequelize": "^4.10.3",
+    "sequelize-cli": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
