@@ -9,12 +9,10 @@ module.exports = (sequelize, DataTypes) => {
         classMethods: {
             associate: function (models) {
                 // associations can be defined here
+                User.hasMany(models.Contact);
             }
         }
     });
 
-    User.associate = function (models) {
-        User.hasMany(models.Contact);
-    };
     return User;
 };
