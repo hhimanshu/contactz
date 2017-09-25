@@ -7,7 +7,7 @@ module.exports = {
             lastName: "last-001",
             email: "first.last.001@gmail.com",
             phone: "2538750234",
-            userId: 1,
+            UserId: 1,
             createdAt: Sequelize.fn("NOW"),
             updatedAt: Sequelize.fn("NOW")
         }, {
@@ -15,7 +15,7 @@ module.exports = {
             lastName: "last-002",
             email: "first.last.002@gmail.com",
             phone: "2538750134",
-            userId: 1,
+            UserId: 1,
             createdAt: Sequelize.fn("NOW"),
             updatedAt: Sequelize.fn("NOW")
         },{
@@ -23,7 +23,7 @@ module.exports = {
             lastName: "last-003",
             email: "first.last.003@gmail.com",
             phone: "2238750134",
-            userId: 2,
+            UserId: 2,
             createdAt: Sequelize.fn("NOW"),
             updatedAt: Sequelize.fn("NOW")
         }], {})

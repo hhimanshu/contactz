@@ -1,13 +1,11 @@
 "use strict";
-import Users from "users";
-
+const models = require("../models");
 module.exports = (sequelize, DataTypes) => {
     const Contacts = sequelize.define("Contacts", {
         firstName: DataTypes.STRING,
         lastName: DataTypes.STRING,
         email: DataTypes.STRING,
         phone: DataTypes.STRING,
-        userId: DataTypes.INTEGER
     }, {
         classMethods: {
             associate: function (models) {
@@ -16,7 +14,15 @@ module.exports = (sequelize, DataTypes) => {
         }
     });
 
-    Users.hasMany(Contacts, {as: "contacts"});
-
+    Contacts.associate = function (models) {
+        // Using additional options like CASCADE etc for demonstration
+        // Can also simply do Task.belongsTo(models.User);
+        Contacts.belongsTo(models.Users, {
+            onDelete: "CASCADE",
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
     return Contacts;
 };

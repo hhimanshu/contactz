@@ -12,5 +12,9 @@ module.exports = (sequelize, DataTypes) => {
             }
         }
     });
+
+    Users.associate = function (models) {
+        Users.hasMany(models.Contacts);
+    };
     return Users;
 };
