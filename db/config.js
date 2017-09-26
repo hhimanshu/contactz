@@ -1,5 +1,4 @@
 module.exports = {
-
     development: {
         username: "postgres",
         password: "contactdb",
@@ -11,6 +10,7 @@ module.exports = {
     },
     production: {
         use_env_variable: "DATABASE_URL",
+        dialect: "postgres",
         seederStorage: "sequelize",
         seederStorageTableName: "SequelizeData"
     }
