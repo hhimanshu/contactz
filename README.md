@@ -17,7 +17,7 @@ To access PostgreSQL
 ```bash
 docker exec -it contact-db bash
 psql -U postgres -W 
-(enter password as contactsdb)
+(enter password as contactdb)
 ```
   
 ### How to run
