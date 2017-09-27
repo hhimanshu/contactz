@@ -24,6 +24,7 @@ psql -U postgres -W
 Checkout the codebase 
 ```bash
 git checkout https://github.com/hhimanshu/contactz
+cd contactz
 ```
 Install Dependencies
 ```bash
