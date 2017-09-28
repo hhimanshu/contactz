@@ -16,8 +16,8 @@
     "dev": "nodemon src/index.js --exec \"node -r dotenv/config -r babel-register\"",
     "clean": "rimraf dist",
     "build": "npm run clean && mkdir -p dist && babel src -s -D -d dist",
-    "test": "node_modules/.bin/jest",
-    "testw": "node_modules/.bin/jest --watch",
+    "test": "NODE_ENV=development node_modules/.bin/jest",
+    "testw": "NODE_ENV=development node_modules/.bin/jest --watch",
     "lint": "esw -w src test"
   },
   "keywords": [
