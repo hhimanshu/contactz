@@ -8,16 +8,16 @@ module.exports = {
             lastName: "Doe",
             email: "john.doe@gmail.com",
             password: "john",
-            createdAt: Sequelize.fn("NOW"),
-            updatedAt: Sequelize.fn("NOW")
+            createdAt: new Date(),
+            updatedAt: new Date()
         }, {
             id: 2,
             firstName: "katy",
             lastName: "perry",
             email: "katy.perry@gmail.com",
             password: "katy",
-            createdAt: Sequelize.fn("NOW"),
-            updatedAt: Sequelize.fn("NOW")
+            createdAt: new Date(),
+            updatedAt: new Date()
         }], {})
     },
 

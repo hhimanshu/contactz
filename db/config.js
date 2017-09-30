@@ -3,8 +3,8 @@ module.exports = {
         username: "postgres",
         password: "contactdb",
         database: "contacts",
-        host: "127.0.0.1",
-        dialect: "postgres",
+        dialect: "sqlite",
+        storage: "./db.development.sqlite",
         seederStorage: "sequelize",
         seederStorageTableName: "SequelizeData"
     },
