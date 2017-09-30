@@ -3,7 +3,7 @@
 - NodeJS
 - ExpressJS
 - Sequelize (for DB Migrations)
-- Docker (for PostgreSQL container)
+- Docker (for PostgreSQL container) or SQLite (for no database installation. This is default mode)
 
 ### Pre-requisites
 - Install NodeJS
@@ -31,11 +31,19 @@ Install Dependencies
 npm install
 ```
 
-Run the DB migrations (local)
+Run the DB migrations (local - PostgreSQL)
 ```bash
 node_modules/.bin/sequelize db:create
 node_modules/.bin/sequelize db:migrate
 node_modules/.bin/sequelize db:seed:all
+```
+Run the DB migrations (local - SQLite)
+```bash
+# if you want to start from scratch
+rm -rf db.development.sqlite;  
+
+# run regardless
+node_modules/.bin/sequelize db:migrate; node_modules/.bin/sequelize db:seed:all
 ```
 
 Run the DB migrations (Heroku)
