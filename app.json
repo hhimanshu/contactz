@@ -1,0 +1,6 @@
+{
+  "name": "Contactz",
+  "description": "A simple NodeJS, Express based REST API server with database migrations",
+  "repository": "https://github.com/hhimanshu/contactz",
+  "keywords": ["node", "express", "sequelize", "postgresql"]
+}

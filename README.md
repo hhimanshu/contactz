@@ -59,6 +59,11 @@ npm run dev
 
 Access the application at http://localhost:3000
 
+### Access Heroku APIs
+https://contactzz.herokuapp.com/  
+https://contactzz.herokuapp.com/users  
+https://contactzz.herokuapp.com/contacts  
+
 ### References
 The following links were found useful when creating this application  
 
