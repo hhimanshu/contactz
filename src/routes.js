@@ -10,13 +10,13 @@ routes.get('/', (req, res) => {
 
 routes.get('/users', (req, res) => {
     models.User.findAll().then(users => {
-        res.send(JSON.stringify(users));
+        res.json(users);
     });
 });
 
 routes.get('/contacts', (req, res) => {
     models.Contact.findAll().then(contacts => {
-        res.send(JSON.stringify(contacts));
+        res.json(contacts);
     });
 });
 

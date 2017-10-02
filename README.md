@@ -73,5 +73,9 @@ https://stackoverflow.com/questions/27687546/cant-connect-to-heroku-postgresql-d
 https://medium.com/@KerrySheldon/deploying-a-node-app-and-importing-a-postgres-database-to-heroku-8ad7bc9a2639  
 https://devcenter.heroku.com/changelog-items/438 (URL Construction scheme)  
 https://stackoverflow.com/questions/22633618/sequelize-migrations-in-heroku  
-http://andyfiedler.com/2016/02/getting-jetbrains-datagrip-to-work-with-heroku-postgres  
- 
+http://andyfiedler.com/2016/02/getting-jetbrains-datagrip-to-work-with-heroku-postgres
+https://stackoverflow.com/questions/22604644/jasmine-async-callback-was-not-invoked-within-timeout-specified-by-jasmine-defa  
+https://volaresystems.com/blog/post/2014/12/09/Testing-async-calls-with-Jasmine
+https://github.com/Automattic/expect.js?files=1
+https://www.npmjs.com/package/supertest
+https://stackoverflow.com/questions/19041837/difference-between-res-send-and-res-json-in-express-js
