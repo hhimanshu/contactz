@@ -1,4 +1,7 @@
 ## Contactzz  [![Build Status](https://travis-ci.org/hhimanshu/contactz.svg?branch=master)](https://travis-ci.org/hhimanshu/contactz)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ### Technologies used
 - NodeJS
 - ExpressJS
